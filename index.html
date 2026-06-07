@@ -3,146 +3,575 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>RootNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RootNet - Protecting Sri Lanka's Forests</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
-
 <body>
 
-    <section class="main container-fluid">
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose">✕</button>
+        <a href="#">Home</a>
+        <a href="#">Forests</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <div class="mobile-menu-btns">
+            <button class="btn-login">Login</button>
+            <button class="btn-register">Register</button>
+        </div>
+    </div>
 
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar-custom" id="navbar">
+        <div class="logo">
+            <img src="#" alt="RootNet Logo">
+        </div>
+        <div class="main-nav">
+            <a href="#" class="active">Home</a>
+            <a href="#">Forests</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+        <div class="nav-buttons">
+            <button class="btn-login">Login</button>
+            <button class="btn-register">Register</button>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
-        <!-- Header -->
-        <section class="body">
-            <div class="nav container-fluid d-flex  align-items-center justify-content-center p-3 w-100 position-fixed">
-                <div
-                    class="nav-bar container-fluid d-flex align-items-center justify-content-between p-3 px-5 w-100 flex-wrap m-0">
-
-                    <div class="logo">
-                        <img src="./assets/logo.png" alt="logo">
-                    </div>
-
-
-                    <div
-                        class="main-nav container-fluid d-flex align-items-center justify-content-around w-50 overflow-hidden flex-wrap m-0 vh-20">
-                        <button class="home btn"><a href="index.html">Home</a></button>
-                        <button class="forests btn"><a href="index.html">Forests</a></button>
-                        <button class="news btn"><a href="index.html">News</a></button>
-                        <button class="contact btn"><a href="index.html">Contact</a></button>
-                        <button class="about btn btn"><a href="index.html">About</a></button>
-                    </div>
-
-                    <div
-                        class="login-section container-fluid d-flex align-items-center justify-content-center  fade-in flex-wrap">
-                        <button onclick="" class="register btn "><a class="px-3" href="index.html">Register</a></button>
-                    </div>
-
-                </div>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="hero-badge">🌍 Sri Lanka Forest Intelligence Platform</div>
+            <h1 class="hero-title">🌿 Root<span>Net</span> 🌿</h1>
+            <p class="hero-subtitle">
+                Protecting Sri Lanka's Forest Future — smart forest intelligence powered by
+                technology, conservation, and biodiversity monitoring.
+            </p>
+            <div class="hero-btns">
+                <a href="#" class="btn-explore">🌳 Explore Forests</a>
+                <a href="#" class="btn-emergency">🔥 Report Emergency</a>
             </div>
-        </section>
-
-
-        <!-- hero-section -->
-
-        <section
-            class="hero-section container-fluid d-flex align-items-center flex-column justify-content-center w-100 min-vh-100">
-            <div
-                class=" hero-text container-fluid d-flex align-items-center justify-content-center w-100 flex-column gap-4">
-                <h1 data-aos="zoom-out">🌍RootNet🌍</h1>
-                <h2>Protecting Sri Lanka’s Forest Future</h2>
-                <h4 class=" text-center">Smart forest intelligence powered by
-                    technology, conservation and biodiversity monitoring.</h4>
+        </div>
+        <div class="ticker-wrap">
+            <div class="ticker-text">
+                🛰 Smart Monitoring &nbsp;&nbsp;•&nbsp;&nbsp; 🌲 Biodiversity Protection &nbsp;&nbsp;•&nbsp;&nbsp;
+                🔥 Fire Detection &nbsp;&nbsp;•&nbsp;&nbsp; 🐘 Wildlife Tracking &nbsp;&nbsp;•&nbsp;&nbsp;
+                🌧 Climate Monitoring &nbsp;&nbsp;•&nbsp;&nbsp; 🦅 Species Conservation &nbsp;&nbsp;•&nbsp;&nbsp;
+                🗺 Forest Mapping &nbsp;&nbsp;•&nbsp;&nbsp; 📡 Real-Time Alerts
             </div>
-
-            <div class="hero-buttons d-flex align-items-center justify-content-center gap-4">
-                <button class="explore btn"><a href="index.html">Explore Forests 🌳</a></button>
-                <button class="emergency btn"><a href="index.html">Report Emergency
-                        🔥</a></button>
-            </div>
-
-            <div class="info container-fluid">
-                <h5 class="text-center pt-5 text-white " aria-hidden="true">🛰 Smart Monitoring • 🌲
-                    Biodiversity
-                    Protection • 🔥 Fire
-                    Detection • 🐘 Wildlife Tracking
-                </h5>
-
-            </div>
-            </div>
-        </section>
-
-        <!-- Contents -->
-        <section class="contents container-fluid row">
-            <div class="left container-fluid col-6 mt-4">
-                <div class="upper container-fluid row">
-                    <h4>🌿Welcome To RootNet</h4>
-                    <h1>Empowering Forest Conservation Through Technology</h1>
-                    <p>RootNet is an advanced digital ecosystem developed for the Sri Lankan Forest Department to
-                        modernize forest conservation
-                        through smart monitoring, biodiversity tracking, wildlife protection, and environmental
-                        intelligence. The platform
-                        empowers sustainable forest management using technology-driven solutions for ecosystem
-                        preservation and real-time
-                        environmental awareness.</p>
-
-                    <button class="aboutUs btn"><a href="index.html">About Us</a></button>
-                </div>
-
-
-            </div>
-
-            <div class="right container-fluid col-6">
-                <img src="./assets/forest.jpg" alt="forest" class="mt-4">
-
-            </div>
-
-            <div class="image-main row container-fluid">
-
-                <div
-                    class="img-content container-fluid col-6 d-flex align-content-center justify-content-between vh-100">
-
-                    <div class="img-content-1 card col-6 mx-4">
-                        <h4>🌳</h4>
-                        <h1>Conservation</h1>
-                        <p>RootNet empowers forest conservation through smart monitoring, biodiversity tracking,
-                            wildlife protection, and
-                            environmental intelligence.</p>
-                    </div>
-
-                    <div class="img-content-2 card col-6">
-                        <h4>🌲</h4>
-                        <h1>Biodiversity</h1>
-                        <p>RootNet empowers forest conservation through smart monitoring, biodiversity tracking,
-                            wildlife protection, and
-                            environmental intelligence.</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
+        </div>
     </section>
 
+    <!-- ===== STATS SECTION ===== -->
+    <section class="stats-section">
+        <div class="container-fluid">
+            <div class="row g-3 justify-content-center">
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-card">
+                        <span class="stat-icon">🌲</span>
+                        <div class="stat-number-wrap">
+                            <span class="stat-number counter" data-target="33">0</span>
+                            <span class="stat-number">%</span>
+                        </div>
+                        <div class="stat-label">Forest Cover of Sri Lanka</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <span class="stat-icon">🦁</span>
+                        <div class="stat-number-wrap">
+                            <span class="stat-number counter" data-target="450">0</span>
+                            <span class="stat-number">+</span>
+                        </div>
+                        <div class="stat-label">Species Monitored</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <span class="stat-icon">📡</span>
+                        <div class="stat-number-wrap">
+                            <span class="stat-number counter" data-target="120">0</span>
+                            <span class="stat-number">+</span>
+                        </div>
+                        <div class="stat-label">Monitoring Stations</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <span class="stat-icon">🌍</span>
+                        <div class="stat-number-wrap">
+                            <span class="stat-number counter" data-target="22">0</span>
+                            <span class="stat-number">k</span>
+                        </div>
+                        <div class="stat-label">Hectares Protected</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section">
+        <div class="container-fluid">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-tag">🌿 Welcome To RootNet</div>
+                    <h2 class="section-title">Empowering Forest Conservation Through Technology</h2>
+                    <p class="section-body">
+                        RootNet is an advanced digital ecosystem developed for the Sri Lankan Forest Department to
+                        modernize
+                        forest conservation through smart monitoring, biodiversity tracking, wildlife protection, and
+                        environmental intelligence.
+                    </p>
+                    <p class="section-body">
+                        Built with cutting-edge sensors, satellite imagery, and AI-powered analysis, RootNet helps
+                        rangers,
+                        scientists, and policymakers make better decisions to protect Sri Lanka's irreplaceable natural
+                        heritage.
+                    </p>
+                    <a href="#" class="btn-outline">About Us →</a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&q=80" alt="Forest">
+                        <div class="about-img-badge">🌿 Est. 2024 — Sri Lankan Forest Dept.</div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row g-4 mt-5">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="mini-card green-card">
+                        <span class="mini-card-icon">🌳</span>
+                        <div>
+                            <div class="feature-title">Conservation</div>
+                            <div class="feature-desc">RootNet empowers forest conservation through smart monitoring,
+                                biodiversity tracking, wildlife protection, and environmental intelligence.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mini-card blue-card">
+                        <span class="mini-card-icon">🌲</span>
+                        <div>
+                            <div class="feature-title">Biodiversity</div>
+                            <div class="feature-desc">Tracking thousands of species across Sri Lanka's diverse
+                                ecosystems — from rainforests to dry-zone scrublands.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features-section">
+        <div class="container-fluid">
+            <div class="features-header" data-aos="fade-up">
+                <div class="section-tag">⚡ What We Do</div>
+                <h2 class="section-title">Core Features of RootNet</h2>
+                <p class="section-body max-600">Everything you need to monitor, protect, and manage Sri Lanka's forests
+                    in one intelligent platform.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card accent-green">
+                        <span class="feature-icon">🛰️</span>
+                        <div class="feature-title">Smart Monitoring</div>
+                        <div class="feature-desc">Real-time satellite and sensor-based monitoring of forest health,
+                            coverage changes, and environmental conditions across all protected zones.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="feature-card accent-red">
+                        <span class="feature-icon">🔥</span>
+                        <div class="feature-title">Fire Detection</div>
+                        <div class="feature-desc">AI-powered fire detection system that alerts rangers within minutes of
+                            smoke or heat anomalies — stopping wildfires before they spread.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                    <div class="feature-card accent-purple">
+                        <span class="feature-icon">🐘</span>
+                        <div class="feature-title">Wildlife Tracking</div>
+                        <div class="feature-desc">GPS collar data, camera traps, and AI image recognition to track
+                            elephants, leopards, and other endangered wildlife in real time.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card accent-blue">
+                        <span class="feature-icon">🌧️</span>
+                        <div class="feature-title">Climate Intelligence</div>
+                        <div class="feature-desc">Weather station integration, rainfall tracking, and micro-climate
+                            analysis helping conservationists understand climate change impacts.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="feature-card accent-yellow">
+                        <span class="feature-icon">🗺️</span>
+                        <div class="feature-title">Forest Mapping</div>
+                        <div class="feature-desc">Interactive GIS maps showing forest boundaries, biodiversity hotspots,
+                            road networks, and ranger patrol routes updated daily.</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                    <div class="feature-card accent-orange">
+                        <span class="feature-icon">📊</span>
+                        <div class="feature-title">Data Analytics</div>
+                        <div class="feature-desc">Comprehensive dashboards, trend reports, and exportable datasets for
+                            researchers, government bodies, and international conservation partners.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-section">
+        <div class="container-fluid">
+            <div class="how-header" data-aos="fade-up">
+                <div class="section-tag">🔄 Process</div>
+                <h2 class="section-title">How RootNet Works</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-title">Sensors Collect</div>
+                        <div class="step-desc">IoT sensors and satellites gather data 24/7 from forests across Sri
+                            Lanka.</div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-title">AI Analyzes</div>
+                        <div class="step-desc">Machine learning models process the data and detect anomalies instantly.
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-title">Alerts Sent</div>
+                        <div class="step-desc">Rangers and officers receive instant alerts on mobile and web platforms.
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-title">Team Responds</div>
+                        <div class="step-desc">Field teams are dispatched with exact coordinates and situation reports.
+                        </div>
+                        <div class="step-arrow">→</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-card">
+                        <div class="step-number">05</div>
+                        <div class="step-title">Data Logged</div>
+                        <div class="step-desc">All incidents are recorded for analysis, improving future predictions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- ===== LIVE ALERTS SECTION ===== -->
+    <section class="alerts-section">
+        <div class="container-fluid">
+            <div class="row align-items-start g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="section-tag">🔴 Live</div>
+                    <h2 class="section-title">Real-Time Forest Alerts</h2>
+                    <p class="section-body">Stay informed with live updates from monitoring stations across Sri Lanka's
+                        protected forests and national parks.</p>
+
+                    <div class="alert-card alert-danger">
+                        <div class="alert-icon">🔥</div>
+                        <div class="alert-info">
+                            <div class="alert-title">Fire Alert — Horton Plains</div>
+                            <div class="alert-sub">Smoke detected in sector 4B. Rangers dispatched.</div>
+                        </div>
+                        <div class="alert-time">2 min ago</div>
+                    </div>
+                    <div class="alert-card alert-warning">
+                        <div class="alert-icon">🐘</div>
+                        <div class="alert-info">
+                            <div class="alert-title">Elephant Movement — Uda Walawe</div>
+                            <div class="alert-sub">Herd of 12 elephants near village boundary.</div>
+                        </div>
+                        <div class="alert-time">18 min ago</div>
+                    </div>
+                    <div class="alert-card alert-info">
+                        <div class="alert-icon">🌧️</div>
+                        <div class="alert-info">
+                            <div class="alert-title">Heavy Rain Forecast — Sinharaja</div>
+                            <div class="alert-sub">Flooding risk moderate in low-lying sectors.</div>
+                        </div>
+                        <div class="alert-time">45 min ago</div>
+                    </div>
+                    <div class="alert-card alert-success">
+                        <div class="alert-icon">✅</div>
+                        <div class="alert-info">
+                            <div class="alert-title">Patrol Completed — Knuckles Range</div>
+                            <div class="alert-sub">All clear. No illegal activity detected in zone 7.</div>
+                        </div>
+                        <div class="alert-time">1 hr ago</div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-placeholder">
+                        <div class="map-big-icon">🗺️</div>
+                        <div class="section-title map-title">Live Forest Map</div>
+                        <p class="section-body map-desc">Interactive satellite map of Sri Lanka's forest monitoring
+                            network — coming soon</p>
+                        <a href="#" class="btn-outline">View Full Map →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WILDLIFE SECTION ===== -->
+    <section class="wildlife-section">
+        <div class="container-fluid">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-tag">🦁 Species</div>
+                <h2 class="section-title">Wildlife We Protect</h2>
+                <p class="section-body max-600 mx-auto">RootNet monitors hundreds of species across Sri Lanka's diverse
+                    ecosystems.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="wildlife-card">
+                        <div class="wildlife-img">🐘</div>
+                        <div class="wildlife-body">
+                            <div class="wildlife-name">Sri Lankan Elephant</div>
+                            <div class="wildlife-status status-vulnerable">Vulnerable</div>
+                            <div class="wildlife-desc">The largest land animal in Sri Lanka, tracked across 6 major
+                                forest zones with GPS collars and camera traps.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+                    <div class="wildlife-card">
+                        <div class="wildlife-img">🐆</div>
+                        <div class="wildlife-body">
+                            <div class="wildlife-name">Sri Lankan Leopard</div>
+                            <div class="wildlife-status status-endangered">Endangered</div>
+                            <div class="wildlife-desc">The apex predator and only large cat in Sri Lanka, closely
+                                monitored with camera traps and motion sensors.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+                    <div class="wildlife-card">
+                        <div class="wildlife-img">🦅</div>
+                        <div class="wildlife-body">
+                            <div class="wildlife-name">Black Eagle</div>
+                            <div class="wildlife-status status-stable">Stable</div>
+                            <div class="wildlife-desc">Soaring above highland forests, the Black Eagle is a key
+                                indicator species of healthy forest ecosystems.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+                    <div class="wildlife-card">
+                        <div class="wildlife-img">🐢</div>
+                        <div class="wildlife-body">
+                            <div class="wildlife-name">Star Tortoise</div>
+                            <div class="wildlife-status status-endangered">Endangered</div>
+                            <div class="wildlife-desc">Facing severe threats from illegal trade and habitat loss in
+                                dry-zone forests. RootNet tracks all known populations.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn-outline">View All Species →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="news-section">
+        <div class="container-fluid">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <div class="section-tag">📰 Latest</div>
+                <h2 class="section-title">Forest News & Updates</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="news-card">
+                        <div class="news-img-box">🌿</div>
+                        <div class="news-body">
+                            <div class="news-tag">Conservation</div>
+                            <div class="news-title">Sinharaja Rainforest Gets New Sensor Network</div>
+                            <div class="news-excerpt">40 new IoT sensors have been deployed across the UNESCO World
+                                Heritage Sinharaja Forest Reserve, boosting real-time monitoring coverage by 60%.</div>
+                            <div class="news-meta">
+                                <span>🕒 May 28, 2026</span>
+                                <span>By RootNet Team</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="news-card">
+                        <div class="news-img-box">🔥</div>
+                        <div class="news-body">
+                            <div class="news-tag news-tag-red">Alert</div>
+                            <div class="news-title">Early Warning System Prevents Wildfire in Horton Plains</div>
+                            <div class="news-excerpt">RootNet's AI fire detection system alerted rangers 12 minutes
+                                before the blaze could spread, preventing an estimated 40 hectares from burning.</div>
+                            <div class="news-meta">
+                                <span>🕒 May 22, 2026</span>
+                                <span>By Forest Dept.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="news-card">
+                        <div class="news-img-box">🐘</div>
+                        <div class="news-body">
+                            <div class="news-tag news-tag-purple">Wildlife</div>
+                            <div class="news-title">Elephant Population in Uda Walawe Reaches Record High</div>
+                            <div class="news-excerpt">Data from RootNet's wildlife tracking platform confirms a 15%
+                                increase in the Uda Walawe elephant population over the past three years.</div>
+                            <div class="news-meta">
+                                <span>🕒 May 15, 2026</span>
+                                <span>By Wildlife Trust</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn-outline">Read All News →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REPORT EMERGENCY ===== -->
+    <section class="report-section">
+        <div class="container-fluid">
+            <div class="report-box" data-aos="zoom-in">
+                <div class="report-emoji">🚨</div>
+                <div class="report-title">Spotted Something Alarming?</div>
+                <div class="report-desc">
+                    Help protect Sri Lanka's forests! If you spot a fire, illegal logging, poaching, or an injured
+                    animal —
+                    report it instantly. Every second counts.
+                </div>
+                <div class="report-btns">
+                    <a href="#" class="btn-fire">🔥 Report Fire Emergency</a>
+                    <a href="#" class="btn-wildlife-report">🐘 Report Wildlife Incident</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="cta-section">
+        <div class="container" data-aos="zoom-in">
+            <h2 class="cta-title">Join the RootNet Community</h2>
+            <p class="cta-desc">
+                Whether you're a researcher, ranger, student, or nature lover — RootNet is for everyone who cares
+                about Sri Lanka's forests. Sign up free and start exploring today.
+            </p>
+            <a href="#" class="btn-cta">🌿 Get Started for Free</a>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row g-5 mb-4">
+                <div class="col-lg-4">
+                    <div class="footer-logo">🌿 RootNet</div>
+                    <div class="footer-desc">
+                        Advanced digital ecosystem for Sri Lankan forest conservation — built with technology,
+                        powered by data, driven by love for nature.
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-title">Explore</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Forests</a></li>
+                        <li><a href="#">Wildlife</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <div class="footer-title">Services</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Fire Detection</a></li>
+                        <li><a href="#">Species Tracking</a></li>
+                        <li><a href="#">Forest Maps</a></li>
+                        <li><a href="#">Data Reports</a></li>
+                        <li><a href="#">Alert System</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-title">Stay Updated</div>
+                    <div class="footer-desc mb-3">Subscribe to get the latest forest news and alerts.</div>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="your@email.com" class="footer-input">
+                        <button class="btn-register footer-sub-btn">Subscribe</button>
+                    </div>
+                    <div class="footer-desc footer-note">🔒 No spam. Unsubscribe anytime.</div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="footer-bottom">
+                <div class="footer-copy">© 2026 RootNet — Sri Lankan Forest Department. All rights reserved.</div>
+                <div class="social-icons">
+                    <a class="social-icon" href="#" title="Twitter">🐦</a>
+                    <a class="social-icon" href="#" title="Facebook">📘</a>
+                    <a class="social-icon" href="#" title="Instagram">📸</a>
+                    <a class="social-icon" href="#" title="YouTube">▶️</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP ===== -->
+    <button id="backToTop" title="Back to top">↑</button>
+
+    <!-- ===== SCRIPTS ===== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
         integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
     <script src="./js/script.js"></script>
+
 </body>
 
 </html>
