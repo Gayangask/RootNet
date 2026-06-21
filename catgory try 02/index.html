@@ -1,0 +1,206 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where To Next — Trip Categories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-panel glass">
+    <p class="eyebrow">Adventure Awaits</p>
+    <h1>Where To<br><span>Next?</span></h1>
+    <p class="subhead">Six ways to leave your routine behind. Pick a stamp, pack a bag, and let the rest sort itself out.</p>
+  </div>
+</header>
+
+<main>
+  <section class="categories">
+    <p class="eyebrow">Six Ways To Escape</p>
+    <h2>Choose Your Departure</h2>
+
+    <div class="grid">
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="Beach Escapes" data-stamp="BCH" data-desc="Where the only itinerary is the tide."
+          aria-label="Book Beach Escapes">
+          <img class="art" src="https://images.unsplash.com/photo-1672841828459-bc913fdcd995?auto=format&fit=crop&w=900&q=75" alt="Tropical beach with palm trees and clear turquoise water" loading="lazy">
+          <div class="stamp">BCH</div>
+          <div class="content">
+            <h3>Beach Escapes</h3>
+            <p>Where the only itinerary is the tide.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="Mountain Trekking" data-stamp="MTN" data-desc="Trails that earn the view at the top."
+          aria-label="Book Mountain Trekking">
+          <img class="art" src="https://images.unsplash.com/photo-1765338022950-29fef6796d5c?auto=format&fit=crop&w=900&q=75" alt="Rocky mountain trail through a forest" loading="lazy">
+          <div class="stamp">MTN</div>
+          <div class="content">
+            <h3>Mountain Trekking</h3>
+            <p>Trails that earn the view at the top.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="Wildlife Safari" data-stamp="WLD" data-desc="Front-row seats to the wild, no zoom required."
+          aria-label="Book Wildlife Safari">
+          <img class="art" src="https://images.unsplash.com/photo-1745526180300-443ef46e6a73?auto=format&fit=crop&w=900&q=75" alt="Elephant standing in the African savanna" loading="lazy">
+          <div class="stamp">WLD</div>
+          <div class="content">
+            <h3>Wildlife Safari</h3>
+            <p>Front-row seats to the wild, no zoom required.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="Cultural Heritage" data-stamp="HRT" data-desc="Centuries of stories, still standing."
+          aria-label="Book Cultural Heritage">
+          <img class="art" src="https://images.unsplash.com/photo-1755071158506-00fda2beabfa?auto=format&fit=crop&w=900&q=75" alt="Ancient temple ruins at sunset" loading="lazy">
+          <div class="stamp">HRT</div>
+          <div class="content">
+            <h3>Cultural Heritage</h3>
+            <p>Centuries of stories, still standing.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="Honeymoon Getaways" data-stamp="HNY" data-desc="Two people, one sunset, zero plans."
+          aria-label="Book Honeymoon Getaways">
+          <img class="art" src="https://images.unsplash.com/photo-1753190550747-c56d10ff6d35?auto=format&fit=crop&w=900&q=75" alt="Overwater bungalows on a clear lagoon" loading="lazy">
+          <div class="stamp">HNY</div>
+          <div class="content">
+            <h3>Honeymoon Getaways</h3>
+            <p>Two people, one sunset, zero plans.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+      <div class="card-wrap">
+        <article class="card" tabindex="0" role="button"
+          data-category="City Breaks" data-stamp="CTY" data-desc="Skylines, side streets, and 48 hours to spare."
+          aria-label="Book City Breaks">
+          <img class="art" src="https://images.unsplash.com/photo-1762257284149-9b9bf1f8b0f7?auto=format&fit=crop&w=900&q=75" alt="City skyline with illuminated skyscrapers at night" loading="lazy">
+          <div class="stamp">CTY</div>
+          <div class="content">
+            <h3>City Breaks</h3>
+            <p>Skylines, side streets, and 48 hours to spare.</p>
+          </div>
+          <div class="book-overlay">Book Now →</div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<section class="cta">
+  <div class="cta-panel glass">
+    <p class="eyebrow">Ready To Pack?</p>
+    <h2>Every trip starts<br>with a single stamp.</h2>
+    <a class="btn" href="#" id="cta-btn">Plan My Trip →</a>
+  </div>
+</section>
+
+<footer class="note"><span class="chip">No blackout dates. No fine print. Just departures.</span></footer>
+
+
+<div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+
+
+    <div id="step-form">
+      <div class="modal-head">
+        <div class="modal-stamp-badge" id="m-stamp">BCH</div>
+        <div>
+          <p class="modal-eyebrow">You're booking</p>
+          <h2 id="modal-title">Beach Escapes</h2>
+          <p class="modal-desc" id="modal-desc">Where the only itinerary is the tide.</p>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="f-name">Full Name</label>
+          <input type="text" id="f-name" placeholder="Jane Smith" autocomplete="name">
+          <span class="ferr" id="e-name"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-email">Email Address</label>
+          <input type="email" id="f-email" placeholder="you@email.com" autocomplete="email">
+          <span class="ferr" id="e-email"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-dep">Departure Date</label>
+          <input type="date" id="f-dep">
+          <span class="ferr" id="e-dep"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-ret">Return Date</label>
+          <input type="date" id="f-ret">
+          <span class="ferr" id="e-ret"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-trav">Travelers</label>
+          <select id="f-trav">
+            <option value="">Select…</option>
+            <option value="1 — Solo">1 — Solo</option>
+            <option value="2 — Couple">2 — Couple</option>
+            <option value="3 — Small group">3 — Small group</option>
+            <option value="4 — Family">4 — Family</option>
+            <option value="5+">5+</option>
+          </select>
+          <span class="ferr" id="e-trav"></span>
+        </div>
+        <div class="form-group">
+          <label for="f-budget">Budget / person (USD)</label>
+          <select id="f-budget">
+            <option value="">Select…</option>
+            <option>Under $500</option>
+            <option>$500 – $1,000</option>
+            <option>$1,000 – $3,000</option>
+            <option>$3,000+</option>
+          </select>
+          <span class="ferr" id="e-budget"></span>
+        </div>
+        <div class="form-group full">
+          <label for="f-notes">Special Requests <span class="opt">(optional)</span></label>
+          <textarea id="f-notes" rows="3" placeholder="Dietary needs, accessibility, anything else…"></textarea>
+        </div>
+      </div>
+
+      <button class="submit-btn" id="submit-btn">Confirm Booking →</button>
+    </div>
+
+  
+    <div id="step-confirm" hidden>
+      <div class="confirm-icon">✓</div>
+      <h2 class="confirm-title">You're all set!</h2>
+      <p class="confirm-sub">Confirmation sent to <strong id="c-email"></strong></p>
+      <div class="confirm-summary" id="c-summary"></div>
+      <button class="submit-btn" id="done-btn">Done</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
